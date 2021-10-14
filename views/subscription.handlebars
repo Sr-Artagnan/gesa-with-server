@@ -1,0 +1,83 @@
+	{{!-- STYLE --}}
+	<link rel="stylesheet" href="../styles/subscription.css">
+	<link rel="stylesheet" href="../styles/partials/info.css">
+	<link rel="stylesheet" href="../styles/partials/container.css">
+
+	{{!-- SCRIPTS --}}
+	<script type="text/javascript" src="../scripts/header_change.js" defer></script>
+	<script type="text/javascript" src="../scripts/menu_mob.js" defer></script>
+		<script type="text/javascript" src="../scripts/alerts.js" defer></script>
+
+	<title>INSCRIÇÃO - GESA</title>
+
+{{#each identical_cpf}}
+
+<div class="alert alert_danger" name="error">
+
+<div class="wrapper_alert_danger">
+<p>Usuário já cadastrado<br>O CPF que você digitou já está cadastrado</p>
+<i onclick="close_alert()" class="far fa-times-circle" id="close_button"></i></div>
+
+</div>
+{{/each}}
+
+	<div class="hero">
+	
+		<div class="legend">
+			<h1 id="legend_1">
+				IMPLANTAÇÃO DO <br> <b style="color:#43ED87">SISTEMA ILPF NO CERRADO</b>
+			</h1>
+	
+		</div>
+		
+	</div>
+
+	<section class="container">
+	<section class="info" style="flex-direction: column;" >
+
+		<div class="wrapper" style="margin: 0;" >
+		<h1 class="info_title">APRESENTAÇÃO</h1>
+		<p class="info_description">Neste curso você irá aprender mais sobre o Sistema ILPF, com profissionais capacitados e experientes. Você terá acesso a materiais exclusivos e aulas síncronas, onde poderá esclarecer suas dúvidas com os professores, além de receber um certificado de conclusão do curso, reconhecido em todo o território nacional. </p>
+	
+
+		<p class="subtitle"><br>VEJA O CONTEÚDO PROGRAMÁTICO ABAIXO:</p>
+		<br>
+
+</div>
+
+		<div class="video_wrapper">
+		<video controls class="apresentation_video">
+			<source src="../videos/video1.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	</section>
+
+	<section class="info">
+
+	<div class="wrapper">
+		<h1 id="program" class="info_title">O QUE VOCÊ VAI APRENDER?</h1>
+	</div>
+
+	</section>
+
+
+{{!-- SCHEDULE --}}
+
+{{>schedule}}
+
+<!--SUBSCRIBE-->
+
+<section class="info" style="flex-direction: column;" >
+
+	<div class="wrapper">
+		<h1 class="info_title">MATRICULE-SE</h1>
+	</div>
+
+		<p style="margin-bottom: 50px;" > Obs: Ao se inscrever, você não é obrigado a participar dos encontros síncronos, apenas deve concluir todos os módulos para receber seu certificado.</p>
+
+</section>
+
+{{>form_subscription}}
+
+</section>

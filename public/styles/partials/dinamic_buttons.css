@@ -1,0 +1,66 @@
+ .container_dinamic {
+  height: max-content; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ .container_dinamic .dinamic_buttons{
+  display: flex;
+  position: inherit;
+  align-items: flex-start;
+  height: max-content;
+  padding-top: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+ .container_dinamic .dinamic_buttons .d_button {
+  border-bottom: solid 3px #44475A;
+  color: #282A36;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px;
+  margin-bottom: 8px;
+  width: 250px;
+  height: 80px;
+}
+
+
+ .container_dinamic .dinamic_buttons .d_button:hover, 
+ .container_dinamic .dinamic_buttons .d_button.active  {
+  cursor: pointer;
+  border-top: solid 5px #43ED87;
+}
+
+ .container_dinamic .dinamic_content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  height: max-content;
+  text-align: justify;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+ .container_dinamic .dinamic_content .p_content {
+  padding-top: 30px;
+  position: relative;
+  font-size: 15px;
+  color: #44475A;
+  height: max-content;
+}
+
+@media (max-width: 500px) {
+   .container_dinamic .dinamic_buttons .d_button{
+    font-size: 15px;
+    padding: 5px;
+    margin: 3px;
+  }
+}

@@ -1,0 +1,57 @@
+.learn_more {
+  padding: 0px 200px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.learn_more .button_visible, .button_visible_static {
+  border-bottom: solid 3px #282A36;
+  padding: 8px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.learn_more .button_visible:hover {
+  cursor: pointer;
+  border: solid 3px #282A36;
+}
+
+.learn_more .information, .information_static {
+  font-size: 18px;
+  color: #44475A;
+  position: relative;
+  display: none;
+  border-bottom: solid 3px #43ED87;
+  padding-bottom: 10px;
+  animation: transform_information 1s ease; 
+}
+
+.learn_more .information {
+  flex-direction: column;
+}
+
+.learn_more .information_static {
+  font-size: 18px;
+  display: flex;
+  color: #44475A;
+  position: relative;
+  border-bottom: solid 3px #43ED87;
+  padding-bottom: 10px; 
+}
+@keyframes transform_information {
+  from {
+    color: white;
+  }
+  to {
+    color: #44475A;
+  }
+}
+
+.learn_more .button_visible:hover {
+  cursor: pointer;
+  border: solid 3px #282A36;
+}

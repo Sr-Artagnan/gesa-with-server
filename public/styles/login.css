@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+p {
+  display: flex;
+}
+
+
+
+.box_form {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.box_form .login_form {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 15px 15px 15px #43ED87;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border: solid 3px #2DC670;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.box_form .login_form .obs {
+  font-size: 15px;
+  color: #282A36;
+  padding: 0px 15px;
+}
+
+.box_form .login_form .label_form {
+  font-size: 25px;
+  color: #282A36;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.box_form .login_form .input_form {
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 6px;
+  border-left: solid 3px #282A36;
+  border-right: solid 3px #282A36;
+}
+
+.box_form .login_form .login_button{
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #282A36;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #2DC670;
+  margin-top: 25px;
+  text-align: center;
+}
+.box_form .login_form .login_button:hover{
+  cursor: pointer;
+  color: #2DC670;
+  background-color: #282A36;
+}

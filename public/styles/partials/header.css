@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p {
+  font-size: 19px;
+  color: #282A36;
+  text-align: justify;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+#header{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2DC670;
+  z-index: 10;
+  transition: 1s;
+}
+
+
+
+#header .wrapper {
+  padding: 2.5vh 10vw;
+  display: flex;  
+  justify-content: space-between;
+}
+
+#header .wrapper .logo {
+  display: flex;
+  align-items: center;
+}
+
+#header .wrapper .logo .logo-img {
+  margin-right: 10px;
+  width: 25px;
+}
+
+#header .wrapper .logo .logo-name {
+  color: white; 
+  font-weight: 800;
+  font-size: 25px;
+}
+
+#header .wrapper .logo .Group {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+  opacity: 80%;
+}
+
+#header .wrapper .logo .Group::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  bottom: 4px;
+  height: 34px;
+  left: -15px;
+  background-color: white;
+  transition: ease .3s;
+  align-items: center;
+  opacity: 75%;
+}
+
+#header .wrapper .menu {
+  display: flex;
+  align-items: center;  
+  font-size: 15px;
+}
+
+
+#header .wrapper .menu .menu-link {
+  color: white;
+  margin: 0 2vw;
+  text-decoration: none;
+  position: relative;
+}
+
+#header .wrapper .menu .menu-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: ease .3s;
+}
+
+#header .wrapper .menu .menu-link:hover::before {
+  width: 20px;
+}
+#header .wrapper .menu .menu-link:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 1030px) {
+  #header {
+    padding: 5px 5px;
+  }
+
+  #header .logo .Group {
+    display: none;
+  }}
+
+@media (max-width: 800px) {
+ 
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#header .wrapper {
+  padding: 5px 5px;
+  width: max-content;
+  height: 50px;
+}
+
+  #header .wrapper .menu {
+    display: none;
+    }
+  
+
+#header .wrapper .logo .Group {
+  font-size: 12px;
+}
+}
+
+@media (max-width: 500px) {
+
+  #header .wrapper {
+    padding: 5px 5px;
+    width: max-content;
+    margin-right: 0;
+    height: max-content
+  }
+
+  #header .wrapper .logo .logo-name{
+    font-size: 20px;
+  }
+
+  #header .wrapper .logo .logo-img{
+    margin-left: 0px;
+  }
+
+  #header .wrapper .logo .Group{
+    display: none;
+  }
+  
+  #header .wrapper .menu {
+      display: none;
+      }
+    }

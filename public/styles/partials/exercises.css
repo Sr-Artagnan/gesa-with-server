@@ -1,0 +1,125 @@
+.form {
+  padding: 30px 0px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form .wrapper_options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form .question {
+  margin-bottom: 20px;
+}
+
+.option {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.option:hover,
+.option_selected {
+  cursor: pointer;
+  color: #2DC670;
+  font-size: 22px;
+}
+
+.feedback {
+  transition: 1s ease;
+  padding: 0px 200px;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feedback .correct_answer {
+  animation: feedback 1s ease;
+  position: absolute;
+  border-radius: 8px;
+  padding: 10px;
+  border: solid 3px #2DC670;
+}
+
+.feedback .wrong_answer{
+  animation: feedback 1s ease;
+  position: absolute;
+  border-radius: 8px;
+  padding: 10px;
+  border: solid 3px #af231e;
+  transition: 1s ease;
+}
+
+@keyframes feedback {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.form .send_answer {
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: max-content;
+  padding: 8px;
+  color: #44475A;
+  border: solid 2px #44475A;
+  box-shadow: 5px 5px 10px #44475A;
+}
+
+.form .send_answer:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #43ED87;
+  color: #2DC670;
+  border: solid 2px #43ED87;
+}
+
+.form_inative p{
+  color: #92949e;
+  transition: 1s ease;
+}
+
+.form_inative .option{
+  color: #92949e;
+  transition: 1s ease;
+}
+
+.form_inative .option:hover{
+  cursor: auto;
+  font-size: 18px;
+  line-height: 25px;
+  color: #92949e;
+}
+
+.form_inative .send_answer {
+display: none; 
+}
+
+.finish{
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: max-content;
+  padding: 8px;
+  color: #44475A;
+  border: solid 2px #44475A;
+  box-shadow: 5px 5px 10px #44475A;
+}
+
+.finish:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #43ED87;
+  color: #2DC670;
+  border: solid 2px #43ED87;
+}

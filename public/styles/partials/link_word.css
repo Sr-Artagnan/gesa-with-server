@@ -1,0 +1,43 @@
+
+.word_link {
+  font-size: 19px;
+  color: #282A36;
+  text-align: justify;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: underline #43ED87 3px;
+  position: relative;
+  background-color: transparent;
+}
+
+.word_link .word_description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2px;
+  visibility: hidden;
+  width: 220px;
+  background-color: white;
+  color: #282A36;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 11;
+  border-radius: 8px;
+  border: solid 3px #43ED87;
+  font-size: 15px;
+}
+
+.word_link:hover{
+  cursor: pointer;
+}
+
+.word_link:hover .word_description {
+  cursor: pointer;
+  visibility: visible;
+}
+.word_link .word_description:hover {
+  visibility: hidden;
+}

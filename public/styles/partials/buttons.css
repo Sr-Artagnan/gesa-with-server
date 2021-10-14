@@ -1,0 +1,30 @@
+.button_light{
+  text-align: center;
+  display: inline-block;
+  border-radius: 8px;
+  border: solid 3px #44475A;
+  color: #44475A;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 20px;
+  box-shadow: 5px 5px 10px #44475A;
+  text-decoration: none;
+  background-color: transparent;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+
+.button_light:hover {
+  cursor: pointer;
+  border: solid 3px #43ED87; 
+  box-shadow: 5px 5px 10px #2DC670;
+  color: #2DC670;
+}
+
+@media (max-width: 1030px) {
+  .button_light{
+    margin: 0;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,105 @@
+.subscribe {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.subscribe .subs_form {
+  display: flex;
+  position: relative;
+  padding: 50px 50px;
+  width: 50%;
+  height: max-content;
+  border:  solid 5px #44475A;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.subscribe .subs_form .wrapper_label {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-content:center;
+  justify-content: center;
+}
+
+.subscribe .subs_form .wrapper_inputs {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-content:center; 
+  justify-content: center;
+}
+
+.subscribe .subs_form .wrapper_label .subscription_label {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 6px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #44475A;
+  margin-bottom: 28px;
+}
+
+.subscribe .subs_form .wrapper_inputs .subscribe_input {
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 6px;
+  width: 300px;
+  margin-bottom: 25px;
+  border-bottom: solid 3px #43ED87;
+}
+
+.subscribe .subs_form .subscribe_input:hover {
+  border-bottom: solid 3px #43ED87;
+}
+
+.send_subscribe_button {
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #282A36;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #2DC670;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.send_subscribe_button:hover {
+  cursor: pointer;
+  border: solid 3px #282A36;
+}
+
+@media (max-width: 800px) {
+  .subscribe .subs_form {
+    padding: 10px 10px;
+    width: 85%;
+  }
+  .subscribe .subs_form .wrapper_inputs .subscribe_input  {
+    display: flex;
+    width: 200px;
+    margin-left: 25px; 
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .subscribe .subs_form .wrapper_label .subscription_label {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .subscribe .subs_form .wrapper_inputs .subscribe_input  {
+    width: 140px;
+  }
+}
+

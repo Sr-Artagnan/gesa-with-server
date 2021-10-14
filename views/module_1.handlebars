@@ -1,0 +1,242 @@
+  <!-- STYLE -->
+	<link rel="stylesheet" href="../styles/partials/container.css">
+	<link rel="stylesheet" href="../styles/partials/info.css">
+	<link rel="stylesheet" href="../styles/partials/container_text.css">
+		<link rel="stylesheet" href="../styles/content.css">
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../scripts/content_dinamic.js" defer></script>
+	<script type="text/javascript" src="../scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../scripts/alerts.js" defer></script>
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../styles/partials/link_word.css">
+	<link rel="stylesheet" href="../styles/partials/learn_more.css">
+	
+
+  <title>Conteúdo - Minicurso ILPF</title>
+
+{{#each fewPoints_Q1}}
+
+<div class="alert alert_danger" name="print1">
+
+<div class="wrapper_alert_danger">
+<p>Acertos insuficientes, <br> tente novamente para passar para o próximo módulo.</p>
+<i onclick="close_alert()" class="far fa-times-circle" id="close_button"></i></div>
+
+</div>
+{{/each}}
+
+<section class="container">
+<div class="container_module_btns">
+
+	<div class="line">
+		<span class="line_btn"></span>
+	</div>
+	
+	<div class="buttons">
+	<button class="module_btn active user">Módulo 1</button>
+	<button class="module_btn">Módulo 2</button>
+	<button class="module_btn">Módulo 3</button>
+	<button class="module_btn">Módulo 4</button>
+	<button class="module_btn">Módulo 5</button>
+	<button class="module_btn">Módulo 6</button>
+</div>
+</div>
+
+<section id="module1_content">
+<section class="info">
+
+	<div class="wrapper">
+		<h1 class="info_introduction">Introdução <br> ao Sistema ILPF</h1>
+		<p class="info_description">
+			Neste módulo iremos conhecer as principais caracterísitcas da Integração lavoura-pecuária-floresta, também conhecida como sistema Agrosilvipastoril. Apresentaremos as vantagens e limitações desse importante sistema no cerrado.
+		</p>
+	</div>
+	<img style="box-shadow: none;" class="info_img" src="../images/module1/img_1.jpg" alt="">
+
+</section>
+
+<div>
+<a href="./books/module_1.pdf" class="download_button">Baixar apostila</a>
+</div>
+<section class="container_text">
+
+	<div class="wrapper">
+		<h1 class="text_title"><b class="topic_number">01</b>Contextualizando</h1>
+		<p class="text_content">
+			
+		O Brasil é o país que tem o maior potencial em expansão de áreas e aumento na intensidade do uso das áreas agrícolas. O país contribui com a crescente demanda para alimentos em todo o mundo, no entanto a abertura de novas áreas tanto para a produção de alimentos como para a produção de energia tem sido bastante questionada pela população em geral. <br>
+		Com isso, os sistemas integrados surgem como uma solução para produzir diferentes produtos agropecuários, com a intensificação do uso das áreas já <button class="word_link">antropizadas
+				<span class="word_description">Uma área antropizada é uma área cujas características originais foram alteradas pela ação do homem. As alterações foram no solo, na vegetação, relevo etc</span>
+			</button>. O uso intensivo não significa o uso excessivo ou indiscriminado dos recursos produtivos, e sim o uso racional eeficiente, o que torna o sistema sustentável.
+			
+		</p>
+	</div>
+	
+</section>
+
+<p style="padding-top: 40px;">Veja a seguir as alternativas de sistemas integrados:</p>
+
+<section class="cards_wrapper">
+<div class="card_info">
+	<img title="redeilpf.org.br/" src="../images/module1/img_3.png" alt="">
+</div>
+<div class="card_info">
+	<img title="redeilpf.org.br/" src="../images/module1/img_4.png" alt="">
+</div>
+<div class="card_info">
+	<img title="redeilpf.org.br/" src="../images/module1/img_5.png" alt="">
+</div>
+<div class="card_info">
+	<img title="redeilpf.org.br/" src="../images/module1/img_6.png" alt="">
+</div>
+</section>
+
+
+<div class="wrapper_short_info">
+	<h1 class="h1_short_info">Qual o melhor sistema?</h1>
+	<div class="short_info">
+	<img title="vectorstock.com/" src="../images/module1/img_7.png" alt="farmer">
+	<p> A escolha por qual estratégia utilizar dependerá das características da região e da propriedade, como proximidade de mercado, logística, relevo, clima, aptidão da propriedade maquinário disponível, entre outros <a href="#footer">&#91a&#93</a>. <br> <br>
+  É importante destacar que todos os sistemas são viáveis a todos os tamanhos de propriedades pequenas, médias e grandes, assim como ao <b>pecuarista</b>, ao <b>agricultor</b> e ao <b>silvicultor;</b></p>
+	</div>
+</div>
+
+<section class="container_text">
+
+	<div class="wrapper">
+		<h1 class="text_title"><b class="topic_number">02</b>Sustentabilidade do Sistema</h1>
+		<p class="text_content">
+			
+		A sustentabilidade de um sistema de produção somente é verificado quando atende os seguintes pilares: 
+		<ul style="  padding-left: 4vw;">
+			<li>Tecnicamente eficiente;</li>
+			<li>Economicamente viável;</li>
+			<li>Ambientalmente adequado e;</li>
+			<li>Socialmente justo.</li>    
+		</ul>
+		
+		</p>
+	</div>
+	
+</section>
+
+
+<section class="wrapper_add_info">
+	<p class="add_info">O sistema de Integração Integração Lavoura Pecuária Floresta é um sistema que integra as atividades agrícolas, pecuárias e florestais realizadas em uma mesma área permitindo uma maior sinergia entre os componentes do agroecossistema, contemplando os quatro pilares da sustentabilidade.</p>
+</section>
+
+<div class="isolated_img_div">
+<img title="revistarural.com.br" class="isolated_img" src="../images/module1/img_8.jpg" alt="Sistema ILPF">
+</div>
+
+<div class="wrapper_short_info">
+	<h1 class="h1_short_info">Desafios</h1>
+	<div class="short_info">
+	<img style="width: 80px;" title="pngwing.com" src="../images/module1/img_9.png" alt="farmer">
+	<p> Dentre os principais entraves identificados para a adoção do sistema ILPF estão a necessidade de nivelamento do conhecimento entre os pesquisadores, a pouca formação de consultores técnicos e a necessidade de interação e capacidade interna entre os produtores <a href="#footer">&#91b&#93</a>.
+	</div>
+</div>
+
+
+<section class="container_text">
+
+	<div class="wrapper">
+		<h1 style="margin-bottom: 20px;" class="text_title"><b class="topic_number">03</b>Benefícios do ILPF</h1>
+
+		<section style="padding-top: 10px;" class="info">
+
+	<div class="wrapper">
+
+		<p class="info_description">
+			Podemos citar os seguintes benefícios do uso do sistema ILPF: 
+		</p>
+		<ul>
+			<br>
+			<li>Aumento na renda líquida do produtor;</li>
+			<li>Aumento na produção de grãos, carne, leite e madeira;</li>
+			<li>Melhoria da qualidade e conservação do solo;</li>
+			<li>Possibilidade de aplicação em propriedades rurais de diferentes tamanhos;</li>
+			<li>Melhoria do bem estar animal;</li>
+			<li>Redução da pressão pela abertura de novas áreas;</li>
+			<li>Redução da sazonalidade do uso da mão de obra;</li>
+			<li>Menor risco das atividades devido à diversificação;</li>
+			<li>Mitigação da emissão dos gases de efeito estufa.<a href="#">&#91c&#93</a></li>
+		</ul>
+
+	</div>
+	<img title="beefpoint.com.br" class="info_img" src="../images/module1/img_10.png" alt="">
+
+</section>
+
+<h1 class="h1_short_info">Motivos para adotar o sistema ILPF:</h1>
+
+<ul>
+	<li>Redução do impacto ambiental;</li>
+	<li>Recuperação de pastagens;</li>
+	<li>Rotação de culturas por necessidade técnica;</li>
+	<li>Aumento da rentabilidade por hectare;</li>
+	<li>Diminuição do risco financeiro.</li>
+</ul>
+
+	</div>
+	
+</section>
+
+
+<section class="container_text">
+
+	<div class="wrapper">
+		<h1 style="margin-bottom: 20px;" class="text_title"><b class="topic_number">04</b>Expansão do sistema nos últimos anos</h1>
+
+	<p class="text_content">
+		Em 10 anos a área ocupada com algum tipo de sistema integrado de produção saltou de 1,87 milhões de hectares para 11,47 milhões. Para 2020 a estimativa foi de 17,4 milhões de hectares. <br>
+		Do total da área com algum tipo de sistema integrado, 83% são de <b>ILP</b> e 9% de <b>ILPF</b>, ou seja 1,8 milhões de hectares com este último. <br>
+		No último congresso mundial de ILPF, realizado em maio de 2021, a <b>Associação REDE ILPF</b> lançou um desafio de dobrar esta área até o ano de <b>2030</b>, chegando a <b>35 milhões de hectares</b> <a href="#">&#91d&#93</a>. <br>
+		Esta meta permitiria o país <b>aumentar a produção</b> de carne, grãos e madeira, <b>sem a necessidade de abertura de novas áreas</b>.
+		</p>
+
+		<div style="margin-top: 50px;" class="isolated_img_div">
+<img title="embrapa.com.br" class="isolated_img" src="../images/module1/img_11.jpg" alt="Sistema ILPF">
+		</div>
+		</section>
+	
+
+<section class="container_text">
+
+	<div class="wrapper">
+		<h1 style="margin-bottom: 20px;" class="text_title"><b class="topic_number">05</b>Considerações</h1>
+
+	<p class="text_content">
+		Assim, devido aos inúmeros benefícios trazidos pelo sistema, o seu estudo é de extrema importância para que venhamos a ter sistemas de produção mais sustentáveis, economicamente viáveis e acima de tudo, profissionais capacitados para dar o suporte necessário aos produtores.
+		</p>
+		</section>
+
+
+
+<section class="learn_more" style="padding: 0; margin-top: 100px;">
+	<i style="color: #282A36; padding: 8px; font-size: 8vw;" class="fas fa-book-reader"></i>
+	<button class="button_visible">Saiba Mais</button>
+	
+	
+	<div class="information">
+		<section class="video_wrapper" style="pa">
+		<p class="video_description">Assista ao vídeo elaborado pela EMBRAPA, e conheça mais sobre o sistema ILPF: https://www.youtube.com/watch?v=ehvqer86YC8</p>
+	<video controls class="video_class" src="../videos/video1.mp4"></video>
+</section>
+	</div>
+</section>
+
+</section>
+
+{{!-- STYLE --}}
+<link rel="stylesheet" href="../styles/partials/exercises.css">
+<script type="text/javascript" src="../scripts/questions.js" defer ></script>
+
+{{>exercises_mod1}}
+
+</section>
+
+</section>

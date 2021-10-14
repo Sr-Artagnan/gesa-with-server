@@ -1,0 +1,164 @@
+ <!-- STYLE -->
+	<link rel="stylesheet" href="../styles/content.css">
+	<link rel="stylesheet" href="../styles/partials/container.css">
+	<link rel="stylesheet" href="../styles/partials/info.css">
+	<link rel="stylesheet" href="../styles/partials/container_text.css">
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../scripts/content_dinamic.js" defer></script>
+	<script type="text/javascript" src="../scripts/menu_mob.js" defer></script>
+  <script type="text/javascript" src="../scripts/modules.js" defer></script>
+	<script type="text/javascript" src="../scripts/alerts.js" defer></script>
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../styles/partials/link_word.css">
+	<link rel="stylesheet" href="../styles/partials/learn_more.css">
+
+
+{{#each fewPoints_Q2}}
+
+<div class="alert alert_danger" name="print2">
+
+<div class="wrapper_alert_danger">
+<p>Acertos insuficientes, <br> tente novamente para passar para o próximo módulo.</p>
+<i class="far fa-times-circle" id="close_button" onclick="close_alert()"></i></div>
+
+</div>
+{{/each}}
+
+<div class="release">
+
+<div class="wrapper_release">
+<p>O <b>módulo 2</b> foi desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Bons estudos! </p>
+</div>
+
+</div>
+
+
+<section style="padding-bottom: 0; padding-top: 0;" class="container">
+<div class="container_module_btns" style="margin-bottom: 200px;" >
+
+	<div class="line">
+		<span class="line_btn"></span>
+	</div>
+	
+	<div class="buttons">
+	<button class="module_btn active mod1_btn" id="mod1_btn">Módulo 1</button>
+	<button class="module_btn active mod2_btn" id="mod2_btn">Módulo 2</button>
+	<button class="module_btn mod3_btn" id="mod3_btn">Módulo 3</button>
+	<button class="module_btn mod4_btn" id="mod4_btn">Módulo 4</button>
+	<button class="module_btn mod5_btn" id="mod5_btn">Módulo 5</button>
+	<button class="module_btn mod6_btn" id="mod6_btn">Módulo 6</button>
+</div>
+</div>
+</section>
+
+{{>mod1_partial}}
+
+
+<section style="padding-top: 0;" class="container container_mod2 container_func">
+<section style="padding-top: 0;" id="module2_content">
+<section class="info">
+
+	<div class="wrapper">
+		<h1 class="info_introduction">Manejo da Fertilidade<br>do Solo em áreas de ILPF</h1>
+		<p class="info_description">
+			Neste módulo serão apresentados os fatores que afetam a disponibilidade dos nutrientes para as plantas e como estes devem ser manejados, iniciando-se com a correta análise química e física do solo, além de uma adequada correção da acidez, adubação e manejo dos resíduos orgânicos. Será demonstrado como a fertilidade do solo é essencial ao sucesso do sistema.
+
+		</p>
+	</div>
+	<img style="box-shadow: none;" class="info_img " id="icon_img" title="vecteezy.com" src="../images/module2/img_1.jpg" alt="">
+
+</section>
+
+<a href="./books/apostila.pdf" class="download_button">Baixar apostila</a>
+
+<section class="container_text">
+
+	<div class="wrapper">
+		<h1 class="text_title"><b class="topic_number">01</b>Tópico</h1>
+		<p class="text_content">
+			&nbsp  	&nbsp Neste módulo iremos conhecer as principais caracterísitcas da Integração lavoura-pecuária-floresta, também conhecida como sistema Agrosilvipastoril. Apresentaremos as vantagens e limitações desse importante sistema no cerrado.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima saepe, cumque culpa hic et blanditiis asperiores consequuntur, nemo sed veritatis quod officiis animi ducimus a repellendus nobis, iste voluptatibus?
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum eligendi provident tempora illo eveniet, aliquam, possimus, praesentium quod ducimus veniam fugit soluta ea quas. Iure nesciunt quam dignissimos corporis.
+		</p>
+	</div>
+	
+</section>
+
+<section style="padding: 0; width: 100%;" class="container_dinamic">
+
+	<section class="dinamic_buttons">
+		<button class="d_button active dinamic-btn" data-target="content-4" data-target_mobile="content_mobile-4">
+			Alguma coisa
+		</button>
+
+
+		<button class="d_button dinamic-btn" data-target="content-5" data-target_mobile="content_mobile-5	">
+			Alguma coisa
+		</button>
+
+
+		<button class="d_button dinamic-btn" data-target="content-6" data-target_mobile="content_mobile-6">
+			Alguma coisa
+		</button>
+
+
+	</section>
+
+<section class="dinamic_content" style="width: 100%;">
+
+		<p class="p_content content-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius, repellendus, natus velit debitis rem aliquid soluta voluptate blanditiis mollitia culpa quisquam quidem saepe eligendi quo! Ullam voluptate dolore iusto! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, itaque voluptatem quod dolore, et id eaque minus temporibus, aliquam rem alias autem rerum? Iste quisquam eaque nostrum hic fuga fugiat! </p>
+
+		<p class="p_content hidden content-5">gapsjdpogapomgopamweomg aoewmgaopm opamopmg opamweopgmaweorgmOPWEM GOPAEWJMG ONMWOPG WERGOPjejg jrjgskeropkhgboajegoJOP JSAERGA jrgoapjwpogj awergj awer ga Lorem ipsum dolor sit amet, consectetur adipisicing elit. At et sequi inventore ipsa, rerum, debitis ipsam earum vero voluptate, cumque ratione eaque. Nisi expedita consequatur dolore harum, nam eveniet rerum?</p>
+
+		<p class="p_content hidden content-6">CONTENT 3 agfaewjhgioajhweo aiowe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum, mollitia quaerat molestias rerum omnis impedit debitis exercitationem dicta, temporibus obcaecati eum laboriosam a ullam, doloribus nesciunt facere animi suscipit?</p>
+</section>
+
+</section>
+
+<section class="container_text">
+		
+	<div class="wrapper">
+
+		<p class="text_content">
+			Neste módulo iremos conhecer as principais caracterísitcas da Integração lavoura-pecuária-floresta, também conhecida como sistema 
+
+			<button class="word_link">Agrosilvipastoril
+				<span class="word_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum necessitatibus eaque, reprehenderit unde quibusdam cum soluta optio quam, odio, laudantium.</span>
+			</button>
+
+			. Apresentaremos as vantagens e limitações desse importante sistema no cerrado.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima saepe, cumque culpa hic et blanditiis asperiores consequuntur, nemo sed veritatis quod officiis animi ducimus a repellendus nobis, iste voluptatibus?
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum eligendi provident tempora illo eveniet, aliquam, possimus, praesentium quod ducimus veniam fugit soluta ea quas. Iure nesciunt quam dignissimos corporis.
+		</p>
+</section>
+
+<section class="wrapper_add_info">
+	<p class="add_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur repudiandae aut, alias doloribus cumque! Ratione delectus sapiente soluta earum assumenda accusantium, consectetur asperiores ipsum eligendi expedita minus error nihil?</p>
+</section>
+
+<section class="video_wrapper">
+	<p class="video_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nisi assumenda laboriosam quaerat voluptate nemo veritatis quibusdam aperiam. Eum officia deleniti voluptas facere accusantium minus ipsa esse nostrum tenetur necessitatibus!</p>
+	<video controls class="video_class" src="../../subscription/video/video1.mp4"></video>
+</section>
+
+<section class="learn_more" style="padding: 0; margin-top: 100px;">
+	<i style="color: #282A36; padding: 8px; font-size: 8vw;" class="fas fa-book-reader"></i>
+	<button class="button_visible">Saiba Mais</button>
+	<div class="information">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi voluptas soluta sequi eligendi dolorum beatae adipisci, quisquam iure quae dolorem sunt, numquam fugiat impedit. Quibusdam aspernatur ipsum quos asperiores.</p>
+	</div>
+</section>
+
+
+{{!-- STYLE --}}
+<link rel="stylesheet" href="../styles/partials/exercises.css">
+<script type="text/javascript" src="../scripts/questions.js" defer ></script>
+
+{{>exercises_mod2}}
+
+</section>
+
+</section>

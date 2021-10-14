@@ -1,0 +1,79 @@
+
+.hidden {
+  display: none;
+}
+
+
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("../images/cover1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.hero .legend {
+  color: white;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  font-size: 3.5vmin;
+  animation: legend_animation 2s ease;
+}
+
+@keyframes legend_animation {
+  from {
+  margin-left: -700px;
+}
+  to {
+  margin: 0;
+  }
+}
+
+
+.subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    color: #44475A;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .subtitle::before {
+    content: "";
+    height: 30px;
+    background-color: #43ED87;
+    width: 8px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    bottom: -5px;
+  }
+
+  @media (max-width: 800px) {
+  .subtitle {
+    font-size: 20px;
+    padding: 50px;
+    line-height: 25px;
+   }
+   
+   .subtitle::before {
+    height: 20px;
+   }}
+   @media (max-width: 500px) {
+    .subtitle {
+      padding: 0px;
+     }
+    .hero {
+      height: 40vh;
+    }
+    }

@@ -1,0 +1,38 @@
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("../../about/img/Capa.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+.hero .legend {
+  color: white;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  font-size: 3.5vmin;
+  animation: legend_animation 3s ease;
+}
+
+
+.hero .legend #vector{
+  position: relative;
+} 
+
+@keyframes legend_animation {
+  from {
+  margin-left: -700px;
+}
+  to {
+  margin: 0;
+  }
+}
