@@ -30,63 +30,6 @@
   padding: 0px 5px;
 }
 
-.alert {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: max-content;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  z-index: 12;
-  animation: alert 1s ease;
-  flex-direction: row;
-}
-
-@keyframes alert{
-  from {
-    margin-top: -60px;
-  }
-  to {
-    margin-top: 50px;
-  }
-}
-
-.alert_danger .wrapper_alert_danger {
-  padding: 10px;
-  border: solid 2px #DD4A48;
-  background: #FFD3D3;
-  width: 50%;
-  border-radius: 8px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  position: fixed;
-}
-
-
-.alert_danger p{
-  color: #DD4A48;
-  font-size: 15px;
-  text-align: center;
-  font-weight: 600;
-  position: relative;
-}
-
-
-.alert_danger .wrapper_alert_danger #close_button{
-  color: #DD4A48;
-  font-size: 25px;
-  position: relative;
-}
-
-
-.alert_danger .wrapper_alert_danger #close_button:hover{
-  cursor: pointer;
-  font-size: 28px;
-}
-
 
 .cards_wrapper {
   width: 100%;

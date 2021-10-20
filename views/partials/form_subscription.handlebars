@@ -1,19 +1,23 @@
 {{!-- STYLE --}}
 <link rel="stylesheet" href="../styles/partials/form_subscription.css">
 
-<div class="subscribe">
+<div class="subscribe" id="subscribe_form" >
 	<form id="subs_form" class="subs_form" action="/redirect" method="POST">
 
   <div class="wrapper_label" >
-  <label class="subscription_label">Nome:<b style="font-weight: 400;">*</b></label>
-  <label class="subscription_label">E-mail:<b style="font-weight: 400;">*</b></label>
-	<label class="subscription_label">CPF:<b style="font-weight: 400;">*</b></label>
+  <label class="subscription_label">Nome:<b style="font-weight: 400;"  >*</b></label>
+  <label class="subscription_label">E-mail:<b style="font-weight: 400;" >*</b></label>
+	<label class="subscription_label">CPF:<b style="font-weight: 400;" >*</b></label>
+  <label class="subscription_label">Cidade e UF:<b style="font-weight: 400;">*</b></label>
+  <label class="subscription_label">Perfil:<b style="font-weight: 400;" ></b></label>
   </div>
 
   <div class="wrapper_inputs" >
-  <input class="subscribe_input" name="name" type="text" placeholder="Digite seu nome" required="true">
-	<input class="subscribe_input" name="email" type="email" placeholder="Digite seu e-mail" required="true">
-  <input class="subscribe_input" name="cpf" type="number" placeholder="Digite seu CPF" required="true">
+  <input class="subscribe_input" name="name" type="text" placeholder="Digite seu nome" require="true">
+	<input class="subscribe_input" name="email" type="email" placeholder="Digite seu e-mail"  require="true">
+  <input class="subscribe_input" name="cpf" type="number" placeholder="Digite seu CPF" require="true">
+  <input class="subscribe_input" name="city" type="email" placeholder="Sua cidade e estado"  require="true">
+  <input class="subscribe_input" name="profile" type="number" placeholder="Ex: produtor rural">
   </div>
 
 </form>

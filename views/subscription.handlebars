@@ -2,6 +2,7 @@
 	<link rel="stylesheet" href="../styles/subscription.css">
 	<link rel="stylesheet" href="../styles/partials/info.css">
 	<link rel="stylesheet" href="../styles/partials/container.css">
+	<link rel="stylesheet" href="../styles/partials/alerts.css">
 
 	{{!-- SCRIPTS --}}
 	<script type="text/javascript" src="../scripts/header_change.js" defer></script>
@@ -15,8 +16,8 @@
 <div class="alert alert_danger" name="error">
 
 <div class="wrapper_alert_danger">
-<p>Usuário já cadastrado<br>O CPF que você digitou já está cadastrado</p>
-<i onclick="close_alert()" class="far fa-times-circle" id="close_button"></i></div>
+<p>O CPF que você digitou já está cadastrado.<i onclick="close_alert()" class="far fa-times-circle" id="close_button" style="padding: 0; display: block;"></i></p>
+</div>
 
 </div>
 {{/each}}
@@ -37,10 +38,10 @@
 
 		<div class="wrapper" style="margin: 0;" >
 		<h1 class="info_title">APRESENTAÇÃO</h1>
-		<p class="info_description">Neste curso você irá aprender mais sobre o Sistema ILPF, com profissionais capacitados e experientes. Você terá acesso a materiais exclusivos e aulas síncronas, onde poderá esclarecer suas dúvidas com os professores, além de receber um certificado de conclusão do curso, reconhecido em todo o território nacional. </p>
+		<p class="info_description">Neste curso online de capacitação, você irá conhecer mais sobre o sistema de Integração Lavoura-Pecuária-Floresta, terá acesso a apostilas, vídeos e exercícios elaborados por profissionais capacitados e, ao final do curso, receberá um certificado de participação. </p>
 	
 
-		<p class="subtitle"><br>VEJA O CONTEÚDO PROGRAMÁTICO ABAIXO:</p>
+		<p class="subtitle"><br>VEJA MAIS INFORMAÇÕES ABAIXO:</p>
 		<br>
 
 </div>
@@ -66,15 +67,75 @@
 
 {{>schedule}}
 
-<!--SUBSCRIBE-->
+
+{{!-- Live --}}
 
 <section class="info" style="flex-direction: column;" >
 
+		<div class="wrapper" style="margin: 0;" >
+		<h1 class="info_title">LIVE DE ENCERRAMENTO</h1>
+		<p class="info_description" style="flex-direction: column;">
+		&nbsp &nbsp Ao final do curso haverá uma apresentação ao vivo com os organizadores do evento, onde serão apresentados resultados de pesquisas realizdas  no IFTM - Campus Uberlândia, sobre o sistema ILPF. A participação na reunião não será obrigatória para receber o certificado. <br> &nbsp &nbsp Durante a live poderão ser sanadas as dúvidas referentes ao conteúdo. <br>
+		<b>&nbsp &nbsp O link da reunião no Google Meet será enviado no seu e-mail.</b>
+		 </p>
+		
+
+		<div class="live_card" >
+		<p><i class="icon_info far fa-calendar-alt"></i>22/11/2021</p>
+		<p style="padding-top: 20px"><i class=" icon_info far fa-clock"></i>19:30 (Horário de Brasília)</p>
+		</div>
+
+		<div class="live_card" >
+		<div style="margin-left: 10px;" class="lessons">
+
+      <p style="list-style: none; font-weight: 800; text-align: center;"><b
+          style=" color: #2DC670; font-weight: 800"
+        >ORGANIZADORES:</b>
+         
+      </p>
+
+      <p class="module_lesson"><b>Professor:</b> Luis Augusto da Silva Domingues
+      </p> <br>
+
+			<b
+        >ESTUDANTES DE AGRONOMIA:</b>
+      <p class="module_lesson">Siro Paulo Moreira
+      </p>
+
+      <p class="module_lesson">Alexandre Naves
+      </p>
+			<p class="module_lesson">Cristiane Araújo
+      </p>
+
+
+    </div>
+		</div>
+		</div>
+		</section>
+
+{{!-- Certified --}}
+
+<section class="info" style="flex-direction: column;" >
+
+		<div class="wrapper" style="margin: 0;" >
+		<h1 class="info_title">CERTIFICADO</h1>
+		<div style="width: 100%; display: flex; justify-content: center;">
+		<i style=" padding: 0px 50px 0px 50px; font-size: 80px; color: #2DC670;" class="fas fa-user-check"></i> 
+	</div>
+		<p class="info_description" style="display: inline;" ><br>
+		&nbsp &nbsp Os certificados de participação, com reconhecimento nacional serão emitidos semanas depois da conclusão do curso, pelo seu e-mail cadastrado, constando uma <b>carga horária total de 24 hrs.</b>
+		 </p>
+		</div>
+		</section>
+
+<!--SUBSCRIBE-->
+<section class="info" style="flex-direction: column; margin-top: 100px" >
+
 	<div class="wrapper">
-		<h1 class="info_title">MATRICULE-SE</h1>
+		<h1 class="info_title">INSCREVA-SE</h1>
 	</div>
 
-		<p style="margin-bottom: 50px;" > Obs: Ao se inscrever, você não é obrigado a participar dos encontros síncronos, apenas deve concluir todos os módulos para receber seu certificado.</p>
+		<p style="margin-bottom: 50px;" >A incrição só é realizada uma vez, e a sala de aula só pode ser acessada se o usuário estiver com seu CPF cadastrado.</p>
 
 </section>
 

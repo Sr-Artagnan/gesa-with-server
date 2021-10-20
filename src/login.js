@@ -1,79 +1,10 @@
+const Database = require("./db/config.js");
 const express = require("express");
 const server = express();
-const routes = require("./routes")
-const Database = require("./db/config.js");
-const handlebars = require("express-handlebars");
-const bodyParser = require("body-parser");
 
-server.use(bodyParser.urlencoded({ extended: true }));
-server.use(bodyParser.json());
-server.use(express.json());
-server.use(routes)
-server.use(express.urlencoded({ extended: true }));
-server.use(express.static("public"));
-server.engine("handlebars", handlebars({ defaultLayout: "main" }));
-server.set("view engine", "handlebars");
-
-
-
-//INIT
-const initDB = {
-  async init() {
-    const db = await Database();
-
-    // executa os comandos dentro do banco de dados
-    await db.exec(`CREATE TABLE user (
-name TEXT,
-email TEXT,
-cpf INTEGER PRIMARY KEY,
-city,
-profile,
-module INT,
-points_Mod1 INT,
-points_Mod2 INT,
-points_Mod3 INT,
-points_Mod4 INT,
-points_Mod5 INT,
-points_Mod6 INT
-)`);
-
-    await db.run(
-      `INSERT INTO user  (name, email, cpf, city, profile, module, points_Mod1, points_Mod2, points_Mod3, points_Mod4, points_Mod5, points_Mod6) VALUES  ("nobody", "nobody@gmail", 1, "nothing", "nothing", 1, 0, 0, 0, 0, 0, 0 );`
-    );
-
-    server.post("/redirect", async (req, res, next) => {
-      const CPF = await db.all(`SELECT cpf FROM user`);
-
-      const cpf_form = Number(req.body.cpf);
-
-      CPF.map((item) => {
-        console.log("CPF do DB: " + Number(item.cpf));
-        console.log("CPF do formulário: " + cpf_form);
-
-        if (cpf_form != item.cpf) {
-          insertInto();
-          async function insertInto() {
-            res.render("redirect.handlebars", { name: req.body.name });
-            await db.run(
-              `INSERT INTO user  (name, email, cpf, city, profile, module, points_Mod1, points_Mod2, points_Mod3, points_Mod4, points_Mod5, points_Mod6) VALUES  ("${req.body.name}", "${req.body.email}", ${req.body.cpf}, "${req.body.city}", "${req.body.profile}", 1, 0, 0, 0, 0, 0, 0 );`
-            );
-
-          }
-        } else {
-          const identical_cpf = [];
-          identical_cpf.push({ error: "CPF já cadastrado" });
-          res.render("subscription.handlebars", {
-            identical_cpf: identical_cpf,
-          });
-        }
-      });
-    });
-  },
-};
-
-initDB.init();
-
-server.post("/login", async (req, res) => {
+module.exports = {
+async postLogin(req, res, next) {
+  res.headersSent = null
   const db = await Database();
   const user = await db.all(`SELECT cpf FROM user`);
   const userForm = Number(req.body.cpf);
@@ -81,11 +12,16 @@ server.post("/login", async (req, res) => {
 
   // Valid
   user.map((item) => {
+
     const cpf = item.cpf;
+    
+     
     if (cpf == userForm) {
-      server.get("/classroom", async (req, response) => {
-        response.render("classroom.handlebars");
-      }) && res.redirect("/classroom");
+      server.get("/classroom", async (req, res) => {
+        res.render("classroom.handlebars");
+      })
+      res.redirect("/classroom")
+      
 
       server.post("/classroom", async (req, res) => {
         userDB.map((itemDB) => {
@@ -274,5 +210,5 @@ server.post("/login", async (req, res) => {
       res.render("login");
     }
   });
-});
-server.listen(3000, () => console.log("rodando"));
+}
+}

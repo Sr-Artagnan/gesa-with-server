@@ -1,75 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
-body {
-  font-family: Poppins, sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 p {
   display: flex;
-}
-
-
-.alert {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: max-content;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  z-index: 12;
-  animation: alert 1s ease;
-  flex-direction: row;
-}
-
-@keyframes alert{
-  from {
-    margin-top: -60px;
-  }
-  to {
-    margin-top: 50px;
-  }
-}
-
-.alert_danger .wrapper_alert_danger {
-  padding: 10px;
-  border: solid 2px #DD4A48;
-  background: #FFD3D3;
-  width: 50%;
-  border-radius: 8px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  position: fixed;
-}
-
-
-.alert_danger p{
-  color: #DD4A48;
-  font-size: 15px;
-  text-align: center;
-  font-weight: 600;
-  position: relative;
-}
-
-
-.alert_danger .wrapper_alert_danger #close_button{
-  color: #DD4A48;
-  font-size: 25px;
-  position: relative;
-}
-
-
-.alert_danger .wrapper_alert_danger #close_button:hover{
-  cursor: pointer;
-  font-size: 28px;
+  font-size: 17px;
 }
 
 .hero {
@@ -138,6 +70,24 @@ p {
   box-shadow: 15px 15px 5px #43ED87;
   border-radius: 5px;
   border: solid 2px #43ED87; 
+}
+
+.icon_info {
+  padding: 0px 50px 0px 50px;
+  font-size: 40px;
+  color: #2DC670;
+}
+
+.live_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-weight: 500;
+  color: #44475A;
+  line-height: 30px;
+  margin-top: 50px;
+  width: 100%
 }
 
 @media (max-width: 800px) {

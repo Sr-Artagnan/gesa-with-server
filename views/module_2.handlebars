@@ -2,6 +2,7 @@
 	<link rel="stylesheet" href="../styles/content.css">
 	<link rel="stylesheet" href="../styles/partials/container.css">
 	<link rel="stylesheet" href="../styles/partials/info.css">
+	<link rel="stylesheet" href="../styles/partials/alerts.css">
 	<link rel="stylesheet" href="../styles/partials/container_text.css">
 
 	<!--SCRIPTS-->
@@ -18,11 +19,11 @@
 
 {{#each fewPoints_Q2}}
 
-<div class="alert alert_danger" name="print2">
+<div class="alert alert_danger no_margin" name="print2">
 
 <div class="wrapper_alert_danger">
-<p>Acertos insuficientes, <br> tente novamente para passar para o próximo módulo.</p>
-<i class="far fa-times-circle" id="close_button" onclick="close_alert()"></i></div>
+<p>Acertos insuficientes, <br> tente novamente para passar para o próximo módulo. <i style="padding: 0; display: block;" class="far fa-times-circle" id="close_button" onclick="close_alert()"></i> </p>
+</div>
 
 </div>
 {{/each}}

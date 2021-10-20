@@ -1,23 +1,39 @@
+.schedule_master_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  height: max-content;
+}
+
 .module_info {
   display: flex;
-
-  padding-top: 50px;
-  padding-bottom: 20px;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 50px 0px 20px 0px;
+  width: 50%;
+  height: 60vh;
 }
 
 .module_info .module_title {
+  text-align: left;
+  width: 100%;
   position: relative;
   display: flex;
-
+  padding-bottom: 25px;
 }
 
 .module_info .module_number {
   border-radius: 100%;
-  padding: 40px;
-  color: #2DC670;
-  background-color:  #282A36;
+  padding: 15px 20px;
+  color: #757575;
+  background-color: #cacaca;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 50px;
   justify-content: center;
   align-content: center;
@@ -29,166 +45,127 @@
   align-self: center;
   align-items: center;
   align-content: center;
-  font-size: 20px;
-  color: #282A36;
-  background-color: #43ED87;
-  padding: 15px;
+  font-size: 18px;
+  color: #282a36;
+  background-color: #43ed87;
+  padding: 10px;
   padding-left: 40px;
   margin-left: -30px;
   z-index: 5;
   border-radius: 6px;
 }
 
-.module_info .teacher_img {
-  height: 110px;
-  width: 110px;
-  border-radius: 100%;
-  border: solid #44475A 5px;
-  margin-left: 10vw;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  z-index: 6
-}
-
-.module_info .module_teacher_name {
-  align-self: center;
-  align-items: center;
-  align-content: center;
-  font-size: 20px;
-  color: #282A36;
-  background-color: #43ED87;
-  padding: 15px;
-  padding-left: 40px;
-  margin-left: -30px; 
-  z-index: 5;
-  border-radius: 6px;
-}
-
-
-.schedule {
-  display: flex;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  justify-content: center;
-}
-
-.schedule .lessons {
-  width: 50%;
+.lessons {
   position: relative;
   display: flex;
-  align-content: center;
   flex-direction: column;
-  font-size: 20px;
+  align-items:flex-start;
   font-weight: 500;
-  color: #44475A;
+  color: #44475a;
+  text-align: left;
 }
 
 ul {
-  color: #282A36;
+  color: #282a36;
 }
 
-.schedule .lessons .module_lesson {
-  font-size: 20px;
+.lessons .module_lesson {
+  font-size: 18px;
   font-weight: 500;
-  color: #44475A;
-  line-height: 35px;
+  color: #44475a;
+  text-align: left;
+  display: block;
 }
 
-
-.schedule .online_class {
-  width: 50%;
+.lessons .module_lesson::before {
+  content: "";
+  height: 10px;
+  border-radius: 100%;
+  background-color: #44475a;
+  width: 10px;
+  display: inline-block;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  font-size: 20px;
+  margin-right: 10px;
+}
+
+.subtopic {
+  font-size: 17px;
+  margin-left: 2.1vw;
   font-weight: 500;
-  color: #44475A;
-  line-height: 45px;
-  margin-top: -6px;
+  color: #44475a;
+  text-align: left;
+  display: block;
+}
+
+.lessons .subtopic::before {
+  content: "";
+  height: 6px;
+  border-radius: 100%;
+  background-color: #44475a;
+  width: 6px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
 }
 
 @media (max-width: 1030px) {
-
   .module_info {
     flex-wrap: wrap;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding: 30px 10px 10px 10px;
     align-content: center;
     justify-content: center;
   }
- 
-  .module_info .teacher_img {
-   margin-left: 0;
-   margin-top: 35px;
-  }
- 
- .schedule {
-   flex-wrap: wrap;
-   justify-content: center;
-   align-content: center;
-   align-items: center;
-  }
- 
-  .schedule .lessons{
-    width: 100%;
+
+  .lessons {
+    width: max-content;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    align-items: left;
   }
- 
-  .schedule .online_class {
-    width: 100%;
-    margin-top: 50px;
-    align-content: center;
-    align-items: center;
-  }
- }
-
-
-
- @media (max-width: 800px) {
-
- .schedule {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
- }
-
- .schedule .lessons{
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 }
 
-.schedule .online_class {
-  width: 100%;
-  margin-top: 50px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;  
-}}
-
-
-@media (max-width: 500px) {
-  
+@media (max-width: 800px) {
+  .schedule_master_wrapper {
+    justify-content: center;
+  }
+  .lessons {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
   .module_info {
     padding-right: 0vw;
     padding-left: 0vw;
+    width: 100%;
+    height: 340px;
   }
-  
+  #module_info_6 {
+    padding-right: 0vw;
+    padding-left: 0vw;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .module_info {
+    padding-right: 0vw;
+    padding-left: 0vw;
+    width: 100%;
+    height: 340px;
+  }
+
+  #module_info_6 {
+    height: 570px
+  }
+
   .module_info .module_number {
     font-size: 30px;
     padding: 22px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  
+
   .module_info .module_name {
     font-size: 15px;
     padding: 8px;
@@ -196,20 +173,12 @@ ul {
     margin-left: -30px;
   }
 
-  .module_info .module_teacher_name {
-    font-size: 15px;
-    padding: 8px;
-    padding-left: 40px;
-    margin-left: -30px;
-    margin-top: 30px;
+  .lessons {
+    width: 100%;
+    display: block;
   }
 
-  .module_info .teacher_img {
-    height: 60px;
-    width: 60px;
-  }
-
-  .module_info .schedule .lessons .module_lesson {
+  .lessons .module_lesson {
     font-size: 15px;
-    line-height: 12px;
-  }}
+  }
+}

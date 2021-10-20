@@ -17,6 +17,7 @@
   font-size: 30px;
   line-height: 40px;
   color: #44475A;
+  text-align: left;
 }
 
 .info .wrapper .info_title::before {

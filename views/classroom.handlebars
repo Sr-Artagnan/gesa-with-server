@@ -5,8 +5,23 @@
 	<link rel="stylesheet" href="../styles/partials/buttons.css">
 	<link rel="stylesheet" href="../styles/partials/info.css">
 	<link rel="stylesheet" href="../styles/partials/container.css">
+	<link rel="stylesheet" href="../styles/partials/alerts.css">
+		<link rel="stylesheet" href="../styles/content.css">
 
 	<script type="text/javascript" src="../scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../scripts/alerts.js" defer></script>
+
+
+{{#each inaccessible}}
+
+<div class="alert alert_danger" name="error">
+
+<div class="wrapper_alert_danger">
+<p>O conteúdo será liberado a partir do dia 01/11/2021. <i onclick="close_alert()" class="far fa-times-circle" id="close_button"></i></p>
+</div>
+
+</div>
+{{/each}}
 
 <body>
 
@@ -17,7 +32,7 @@
 		</form>
 			<button form="form_hidden" type="submit" style="margin-left: 0;" id="button_access_schedule" class="button_light">ACESSAR CONTEÚDO</button>
 		
-			<button style="margin-left: 0;" id="button_access_schedule" class="button_light"><a class="link_button" href="/subscription#program">VER O CRONOGRAMA</a></button>
+			<button style="margin-left: 0;" id="button_access_schedule" class="button_light"><a class="link_button" href="/subscription#schedule_master">Ver a Programação</a></button>
 		</div>
 
 	<section class="info" style="flex-direction: column;" >

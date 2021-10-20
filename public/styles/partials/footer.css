@@ -1,10 +1,9 @@
 #footer {
   display: flex;
-  background-color: #2DC670;
+  background-color: white;
   width: 100%;
   height: 80px;
-  align-items: center;
-  justify-content: center;
+  border-top: solid 2px #43ED87;
 }
 
 
@@ -26,18 +25,19 @@
 
 #footer .wrapper .logo .logo-img {
   margin-right: 10px;
-  width: 25px;
+  width: 40px;
 }
 
 #footer .wrapper .logo .logo-name {
-  color: white; 
+  color: #0fc65f; 
   font-weight: 800;
   font-size: 25px;
+  margin-left: -3px;
 }
 
 #footer .wrapper .logo .Group {
-  color: white;
-  font-weight: 300;
+  color: #0fc65f;
+  font-weight: 600;
   font-size: 12px;
   align-items: center;
   position: relative;
@@ -52,7 +52,7 @@
   bottom: 4px;
   height: 34px;
   left: -15px;
-  background-color: white;
+  background-color: #0fc65f;
   transition: ease .3s;
   align-items: center;
   opacity: 75%;
@@ -62,31 +62,43 @@
 #footer .contact {
   display: flex;
   position: relative;
-  align-content: center;
-  align-items: center;
   padding: 2vw;
   justify-content: space-between;
+  flex-direction: row;
+  width: 45%
+}
+
+#footer .contact p{
+ font-size: 13px;
+ text-align: center;
+}
+
+#footer .contact .contact_card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 20px;
 }
 
 #footer .contact #email #mail_icon, #footer .contact #insta #insta_icon, #footer .contact #whatsapp #whatsapp_icon {
   padding: 5vw;
   font-size: 30px;
   padding: 0;
-  margin-right: 10px;
-}
-
-#footer .contact #insta, #footer .contact #whatsapp{
-   margin-left: 5vw; 
 }
   
 #footer .contact #email, #footer .contact #insta, #footer .contact #whatsapp {
   text-decoration: none; 
-  color: white;
+  color: #0fc65f;
   background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
 }
-#footer .contact #email:hover, #footer .contact #insta:hover {
+#footer .contact #email:hover, #footer .contact #insta:hover, #footer .contact #whatsapp:hover {
   cursor: pointer;
-  text-decoration: underline white;
+  text-decoration: underline #0fc65f;
 }
 
 @media (max-width: 1030px){
@@ -99,13 +111,15 @@
   #footer .wrapper{
     display: none;
     }
+  
+  #footer .contact {
+    width: 100%
+  }
     
     #footer .contact #email #mail_icon, #footer .contact #insta #insta_icon {
     padding: 5vw;
     font-size: 25px;
     padding: 0;
-    margin-right: 10px;
-    margin-left: 15vw;
     }
     }
   
