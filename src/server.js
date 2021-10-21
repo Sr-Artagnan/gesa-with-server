@@ -16,7 +16,7 @@ server.engine("handlebars", handlebars({ defaultLayout: "main" }));
 server.set("view engine", "handlebars");
 
 var timeout = require('connect-timeout')
-serve.use(timeout('25s'))
+server.use(timeout('25s'))
 
 //Routes
 server.get("/", (req, res, next) => {res.render("index.handlebars")
