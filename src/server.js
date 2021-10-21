@@ -5,6 +5,7 @@ const Database = require("./db/config.js");
 const handlebars = require("express-handlebars");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+var timeout = require('connect-timeout')
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
