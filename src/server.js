@@ -277,4 +277,4 @@ server.post("/login", async (req, res) => {
     }
   });
 });
-server.listen(port, () => console.log("rodando"));
+server.listen(process.env.PORT || 3000);
