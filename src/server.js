@@ -16,14 +16,14 @@ server.engine("handlebars", handlebars({ defaultLayout: "main" }));
 server.set("view engine", "handlebars");
 
 var timeout = require('connect-timeout')
-
+serve.use(timeout('25s'))
 
 //Routes
-server.get("/", timeout('20s'), (req, res, next) => {res.render("index.handlebars")
+server.get("/", (req, res, next) => {res.render("index.handlebars")
 if (!req.timedout) next()});
-server.get("/subscription", timeout('20s'), (req, res, next) => {res.render("subscription.handlebars")
+server.get("/subscription", (req, res, next) => {res.render("subscription.handlebars")
 if (!req.timedout) next()});
-server.get("/login", timeout('20s'), (req, res, next) => { res.render("login.handlebars")
+server.get("/login", (req, res, next) => { res.render("login.handlebars")
 if (!req.timedout) next()});
 
 //INIT
