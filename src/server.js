@@ -1,6 +1,5 @@
 const express = require("express");
 const server = express();
-const routes = require("./routes")
 const Database = require("./db/config.js");
 const handlebars = require("express-handlebars");
 const bodyParser = require("body-parser");
@@ -11,13 +10,21 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 server.use(express.json());
 server.use(cors)
-server.use(routes)
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
 server.engine("handlebars", handlebars({ defaultLayout: "main" }));
 server.set("view engine", "handlebars");
 
+var timeout = require('connect-timeout')
 
+
+//Routes
+server.get("/", timeout('20s'), (req, res, next) => {res.render("index.handlebars")
+if (!req.timedout) next()});
+server.get("/subscription", timeout('20s'), (req, res, next) => {res.render("subscription.handlebars")
+if (!req.timedout) next()});
+server.get("/login", timeout('20s'), (req, res, next) => { res.render("login.handlebars")
+if (!req.timedout) next()});
 
 //INIT
 const initDB = {
