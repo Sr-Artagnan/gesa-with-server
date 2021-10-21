@@ -19,12 +19,20 @@ var timeout = require('connect-timeout')
 server.use(timeout('25s'))
 
 //Routes
-server.get("/", (req, res, next) => {res.render("index.handlebars")
-if (!req.timedout) next()});
-server.get("/subscription", (req, res, next) => {res.render("subscription.handlebars")
-if (!req.timedout) next()});
-server.get("/login", (req, res, next) => { res.render("login.handlebars")
-if (!req.timedout) next()});
+server.get("/", (req, res, next) => {
+  res.render("index.handlebars")
+  if (!timeout) next()
+});
+
+server.get("/subscription", (req, res, next) => {
+  res.render("subscription.handlebars")
+  if (!timeout) next()
+});
+
+server.get("/login", (req, res, next) => {
+  res.render("login.handlebars")
+  if (!timeout) next()
+});
 
 //INIT
 const initDB = {
