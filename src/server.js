@@ -4,10 +4,12 @@ const routes = require("./routes")
 const Database = require("./db/config.js");
 const handlebars = require("express-handlebars");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 server.use(express.json());
+server.use(cors)
 server.use(routes)
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
@@ -275,4 +277,4 @@ server.post("/login", async (req, res) => {
     }
   });
 });
-server.listen(3000, () => console.log("rodando"));
+server.listen(port, () => console.log("rodando"));
