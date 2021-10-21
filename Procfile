@@ -1,2 +1,2 @@
 web: node src/server.js
-APP_URL=http://localhost:3000
+APP_URL=https://ilpf.herokuapp.com/
